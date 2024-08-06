@@ -1,4 +1,5 @@
-import { HomeData, NavBar, TitleSubtitileParagraph } from "./types";
+import { HomeData, NavBar, TitleSubtitileParagraph, Projects} from "./types";
+import imgCastell from '../assets/castell.png'
 
 export const homeData: HomeData = {
   title: "Joan Gomà Cortés",
@@ -11,13 +12,12 @@ export const navBarData: NavBar = {
   items: [
     { name: "Home", href: "#" },
     { name: "About", href: "#" },
-    { name: "Skills", href: "#" },
-    { name: "Services", href: "#" },  
-    { name: "Portfolio", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Projects", href: "#" },
+    { name: "Contact", href: "#" },  
   ]
 }
 
+// About me data
 export const aboutMeData: TitleSubtitileParagraph = {
   title: "About me",
   subtitle: "My introduction",
@@ -27,9 +27,37 @@ export const aboutMeData: TitleSubtitileParagraph = {
 
 } 
 
-
+// Coding: view more
 export const codingPopUp: TitleSubtitileParagraph = {
   title: "Coding skills",
   subtitle: "noseee",
   descriptions: ["Item 1: Detailed description about item 1.", "Item 2: Detailed description about item 2.", "Item 3: Detailed description about item 3.", "Item 4: Detailed description about item 4."]
 }
+
+// Sport: view more
+export const sportPopUp: TitleSubtitileParagraph = {
+  title: "Sport",
+  subtitle: "noseee",
+  descriptions: ["Item 1: Detailed description about item 1.", "Item 2: Detailed description about item 2.", "Item 3: Detailed description about item 3.", "Item 4: Detailed description about item 4."]
+}
+
+// Coding: view more
+export const workingExperiencePopUp: TitleSubtitileParagraph = {
+  title: "Working Experience",
+  subtitle: "noseee",
+  descriptions: ["Item 1: Detailed description about item 1.", "Item 2: Detailed description about item 2.", "Item 3: Detailed description about item 3.", "Item 4: Detailed description about item 4."]
+}
+
+export const projects = [
+  {
+    imageSrc: imgCastell,
+    title: 'Project One',
+    description: 'This is a description of project one.',
+  },
+  {
+    imageSrc: '../assets/castell.png',
+    title: 'Project Two',
+    description: 'This is a description of project one.',
+  },
+  
+]

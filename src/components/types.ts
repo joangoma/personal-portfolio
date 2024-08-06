@@ -23,3 +23,12 @@ export interface SocialLink {
 platform: string;
 url: string;
 }
+
+
+export interface ProjectCardProps {
+  imageSrc: string;
+  title: string;
+  description: string;
+}
+
+export type Projects = ProjectCardProps[];
