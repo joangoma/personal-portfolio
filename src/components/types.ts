@@ -13,7 +13,7 @@ subtitle: string;
 description: string;
 }
 
-export interface AboutMeData {
+export interface TitleSubtitileParagraph {
   title: string;
   subtitle: string;
   descriptions: string[];

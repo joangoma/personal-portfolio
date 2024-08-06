@@ -1,4 +1,4 @@
-import { HomeData, NavBar, AboutMeData } from "./types";
+import { HomeData, NavBar, TitleSubtitileParagraph } from "./types";
 
 export const homeData: HomeData = {
   title: "Joan Gomà Cortés",
@@ -18,7 +18,7 @@ export const navBarData: NavBar = {
   ]
 }
 
-export const aboutMeData: AboutMeData = {
+export const aboutMeData: TitleSubtitileParagraph = {
   title: "About me",
   subtitle: "My introduction",
   descriptions: ["Hi, I'm Joan Gomà, a Data Scientist Student in Barcelona. I'm passionate about my work and always try to merge my knowledge in Data Science with my hobbies such as music and sport to approach problems differently.",
@@ -26,3 +26,10 @@ export const aboutMeData: AboutMeData = {
    ]
 
 } 
+
+
+export const codingPopUp: TitleSubtitileParagraph = {
+  title: "Coding skills",
+  subtitle: "noseee",
+  descriptions: ["Item 1: Detailed description about item 1.", "Item 2: Detailed description about item 2.", "Item 3: Detailed description about item 3.", "Item 4: Detailed description about item 4."]
+}

@@ -1,9 +1,13 @@
-import { AboutMeData } from "../types";
+import { TitleSubtitileParagraph } from "../types";
 import { AboutMeSkills } from "./AboutMeSkills";
 import "./AboutMe.css";
 import "boxicons";
 
-export const AboutMe = ({ title, subtitle, descriptions }: AboutMeData) => {
+export const AboutMe = ({
+  title,
+  subtitle,
+  descriptions,
+}: TitleSubtitileParagraph) => {
   return (
     <div className="bg-gray-200 py-20 about__section">
       <h2 className="text-center mt-2 mb-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
