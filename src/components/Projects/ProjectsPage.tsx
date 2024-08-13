@@ -1,5 +1,4 @@
 import ProjectCard from "./ProjectCard";
-import castellimg from '../../assets/castell.png'
 import { Projects } from "../types";
 
 interface ProjectsPageProps {
@@ -8,7 +7,7 @@ interface ProjectsPageProps {
 
 const ProjectsPage = ({projects}: ProjectsPageProps) => {
   return (
-    <div className="bg-grey-200 bg-gray-200 py-20 p-8 space-y-4">
+    <div className="bg-grey-200 bg-gray-200 py-20 p-8 space-y-4" id="projects">
       <h2 className="text-center mb-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         My Projects
       </h2>

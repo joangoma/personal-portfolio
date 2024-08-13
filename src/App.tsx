@@ -3,11 +3,13 @@ import Navbar from "./components/Home/NavBar";
 import { AboutMe } from "./components/AboutMe/AboutMe";
 import { navBarData, homeData, aboutMeData, projects } from "./components/webContent";
 import ProjectsPage from "./components/Projects/ProjectsPage";
+import ContactCard from "./components/Contact/ContactCard";
 
 function App() {
   return (
     <div className="App">
       <Navbar items={navBarData.items} />
+
       <Home
         title={homeData.title}
         subtitle={homeData.subtitle}
@@ -20,6 +22,9 @@ function App() {
       ></AboutMe>
       <ProjectsPage projects={projects}>
         </ProjectsPage> 
+
+      <ContactCard></ContactCard> 
+
     </div>
   );
 }

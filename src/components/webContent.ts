@@ -1,5 +1,6 @@
 import { HomeData, NavBar, TitleSubtitileParagraph, Projects} from "./types";
 import imgCastell from '../assets/castell.png'
+import hackupc24 from '../assets/hackupc24.png'
 
 export const homeData: HomeData = {
   title: "Joan Gomà Cortés",
@@ -10,10 +11,10 @@ export const homeData: HomeData = {
 
 export const navBarData: NavBar = {
   items: [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#" },
-    { name: "Projects", href: "#" },
-    { name: "Contact", href: "#" },  
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },  
   ]
 }
 
@@ -51,13 +52,23 @@ export const workingExperiencePopUp: TitleSubtitileParagraph = {
 export const projects = [
   {
     imageSrc: imgCastell,
-    title: 'Project One',
+    title: 'Human Towers',
     description: 'This is a description of project one.',
   },
   {
     imageSrc: '../assets/castell.png',
-    title: 'Project Two',
+    title: 'Outfit Generator',
     description: 'This is a description of project one.',
   },
+  {
+    imageSrc: '../assets/castell.png',
+    title: 'Catalan Pronominalizer',
+    description: 'This is a description of project one.',
+  }, 
+  {
+    imageSrc: hackupc24,
+    title: 'Retrieval Augmented Generation Assistant',
+    description: 'This is a description of project one.',
+  }
   
 ]

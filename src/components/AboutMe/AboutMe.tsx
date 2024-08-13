@@ -1,6 +1,7 @@
 import { TitleSubtitileParagraph } from "../types";
-import { AboutMeSkills } from "./AboutMeSkills";
-import "./AboutMe.css";
+import { AboutMeSkillsElement } from "./TechnicalElement";
+import { Hobby } from "./Hobby"
+import { codingPopUp, workingExperiencePopUp, sportPopUp } from "../webContent";
 import "boxicons";
 
 export const AboutMe = ({
@@ -9,49 +10,40 @@ export const AboutMe = ({
   descriptions,
 }: TitleSubtitileParagraph) => {
   return (
-    <div className="bg-gray-200 py-20 about__section">
-      <h2 className="text-center mt-2 mb-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+    <div className="bg-gray-200 justify-center py-20" id="about">
+      <h2 className="text-center mb-10 sm:text-4xl font-bold tracking-tight text-gray-900">
         {title}
       </h2>
-      <h3 className="text-center mb-12 text-1xl tracking-tight text-gray-600">
-        {subtitle}
-      </h3>
+      <h3 className="md:text-2xl lg:text-3xl text-gray-600 mb-12 text-center">{subtitle}</h3>
 
-      <div className="flex-col items-center mx-auto w-2/3 mb-24">
-        <div className="grid grid-cols-2 items-start">
-          <div className="flex row-span-2 justify-center items-center ">
-            <div className="about_me_image"></div>
+      <div className="flex flex-col items-center justify-center md:flex-row lg:flex-row mb-8">
+        <div className="w-full md:w-1/3 lg:w-1/3 flex justify-center mb-8 md:mb-0">
+          <img
+            src="/src/assets/Profile_image.png"
+            alt="Description of the image"
+            className="w-full h-full md:w-72 md:h-72 lg:w-96 lg:h-96   object-cover"
+          />
+        </div>
+        <div className="flex flex-col items-start self-center w-full md:w-1/4 lg:w-1/3">
+          <div className="flex flex-col md:flex-row lg:flex-row w-full justify-center">
+            <Hobby title="Coding" icon="bx-code-alt" text="5 years coding" />
+            <Hobby title="Music" icon="bxs-music" text="10 years playing saxophone" />
+            <Hobby title="Sports" icon="bxs-basketball" text="Weekly basketball games" />
           </div>
-
-          <div className="grid grid-cols-3 w-3/4">
-            <div className="w-32 h-32 bg-gray-100 border-2 border-gray-300  text-center content-center rounded-xl ">
-              <i className="bx bx-code-alt bx-sm bx-tada-hover about__icon"></i>
-              <h3 className="font-semibold text-gray-900">Coding</h3>
-              <span className="font text-gray-600">5 years coding</span>
-            </div>
-
-            <div className="w-32 h-32 bg-gray-100 border-2 border-gray-300  text-center content-center rounded-xl ">
-              <i className="bx bxs-music bx-sm bx-tada-hover about__icon"></i>
-              <h3 className="font-semibold text-gray-900 ">Music</h3>
-              <span className="font text-gray-600">Bla bla bla</span>
-            </div>
-
-            <div className="w-32 h-32 bg-gray-100 border-2 border-gray-300 text-center content-center rounded-xl ">
-              <i className="bx bxs-landscape bx-sm bx-tada-hover about__icon"></i>
-              <h3 className="font-semibold text-gray-900">Sport</h3>
-              <span className="font text-gray-600">Bla bla bla</span>
-            </div>
-          </div>
-
-          <div className="mt-6 col-start-2 justify-center w-2/3">
-            {descriptions.map((item) => (
-              <p className="text-gray-600 mb-4 text-justify">{item}</p>
+          <div className="mt-6 w-full">
+            {descriptions.map((item, index) => (
+              <p key={index} className="text-gray-600 mb-4 text-justify">{item}</p>
             ))}
           </div>
         </div>
       </div>
-
-      <AboutMeSkills></AboutMeSkills>
+      <h3 className="md:text-2xl lg:text-3xl text-gray-600 mb-12 text-center">Techincall skills & Work experience</h3>
+      <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center">
+        <AboutMeSkillsElement data={codingPopUp} icon='bx-code-block'></AboutMeSkillsElement>
+        <AboutMeSkillsElement data={workingExperiencePopUp} icon='bxs-briefcase'></AboutMeSkillsElement>
+        <AboutMeSkillsElement data={sportPopUp} icon='bxs-basketball'></AboutMeSkillsElement>
+      </div>
+    
     </div>
   );
 };

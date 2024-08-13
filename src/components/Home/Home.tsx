@@ -4,17 +4,19 @@ import ScrollDown from "./ScrollDown";
 
 const Home = ({ title, subtitle, description }: HomeData) => {
   return (
-    <div className="bg-gray-200 min-h-screen flex flex-col items-center justify-center">
-      <div className="container mx-auto px-6 md:flex md:items-center md:justify-center">
-        <div className="md:w-2/5 flex flex-col items-start">
-          <h1 className="text-6xl font-bold text-gray-800 mb-4">{title}</h1>
-          <h2 className="text-3xl text-gray-600 mb-6">{subtitle}</h2>
-          <p className="text-lg text-gray-600 max-w-lg mb-6">{description}</p>
+    <div className="bg-gray-200 min-h-screen flex flex-col items-center justify-center" id="home">
+      <div className="flex flex-col md:felx-row lg:flex-row ">
+        <div className="w-full md:w-2/5 lg:w-1/2 mt-8 flex flex-col ">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 self-start">{title}</h1>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-gray-600 mb-6 self-start">{subtitle}</h2>
+          <p className="text-base md:text-lg text-gray-600 max-w-lg mb-6 self-start text-justify-center">{description}</p>
         </div>
-        <section>
+
+        <div className="w-full md:w-2/5 lg:w-1/2 flex justify-center mt-6 md:mt-0">
           <div className="home_image"></div>
-        </section>
+        </div>
       </div>
+
       <div className="flex justify-center items-center mt-12">
         {" "}
         <ScrollDown />
