@@ -1,6 +1,8 @@
 import { HomeData, NavBar, TitleSubtitileParagraph, Projects} from "./types";
 import imgCastell from '../assets/castell.png'
+import imgPronoms from '../assets/pronominalitza_web.png'
 import hackupc24 from '../assets/hackupc24.png'
+import outfit_generator from '../assets/outfit_generator.png'
 
 export const homeData: HomeData = {
   title: "Joan Gomà Cortés",
@@ -56,19 +58,19 @@ export const projects = [
     description: 'This is a description of project one.',
   },
   {
-    imageSrc: '../assets/castell.png',
+    imageSrc: outfit_generator,
     title: 'Outfit Generator',
-    description: 'This is a description of project one.',
+    description: 'The Outfit Generator project leverages user input to create tailored outfit recommendations from a curated dataset of "good" outfits. By incorporating user preferences for various clothing items, the system employs entropy minimization techniques to optimize the probability space between different garments. \n This approach ensures that the generated outfits not only match user specifications but also exhibit minimal randomness, resulting in cohesive and stylish outfit combinations. The project showcases innovative use of data analysis and machine learning to enhance personal fashion choices. \n This project was developed during Datathon FME 2023. See it on [DevPost](https://devpost.com/software/outfit-generator-3k6tv1)',
   },
   {
-    imageSrc: '../assets/castell.png',
+    imageSrc: imgPronoms,
     title: 'Catalan Pronominalizer',
     description: 'This is a description of project one.',
   }, 
   {
     imageSrc: hackupc24,
     title: 'Retrieval Augmented Generation Assistant',
-    description: 'This is a description of project one.',
+    description: 'The Retrieval Augmented Generation Assistant is an intelligent chatbot that enables users to ask questions about information that was not available in the training dataset of the Large Language Model being used. \n To achieve so, the user just has to introduce any URL (it works both with webpages and PDFs) and Retrieval Augmented Generation Assistant will be able to answer questions about that content. \n This project was developed during the HackUPC 2024. See it on [DevPost](https://devpost.com/software/retrieval-augmented-generation-iris-intersystems)',
   }
   
 ]

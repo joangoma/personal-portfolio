@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DescriptionComponent from './DescriptionComponent';
 
 interface ProjectCardProps {
   imageSrc: string;
@@ -14,36 +15,35 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, description 
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row lg:flex-row items-center p-4 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-        <div className="mb-4 relative">
+      <div className="flex flex-col md:flex-row lg:flex-row items-center p-4 bg-gray-100 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div className="flex-shrink-0 w-48 h-48 sm:mb-4 md:mb-0">
           <img
             src={imageSrc}
             alt={title}
-            className="w-48 h-48 object-cover rounded-lg border border-gray-300 cursor-pointer transform transition-transform duration-300"
+            className="w-full h-full object-cover rounded-lg border border-gray-300 cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:border-blue-500"
             onClick={openModal}
           />
         </div>
-        <div className="ml-4">
-          <h3 className="text-center md:text-left lg:text-left text-lg font-semibold text-gray-800">{title}</h3>
-          <p className="text-gray-600">{description}</p>
-        </div>
+        <DescriptionComponent title={title} description={description}></DescriptionComponent>
       </div>
 
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative bg-white rounded-lg p-4 max-w-3xl w-full">
+          <div className="relative bg-white rounded-lg p-4 w-[80vmin] h-[80vmin] max-w-3xl max-h-3xl">
             <button
               onClick={closeModal}
-              className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-2xl"
+              className="absolute -top-3 -right-3 bg-white text-gray-800 hover:text-gray-600 text-2xl w-8 h-8 rounded-full flex items-center justify-center shadow-md z-10"
             >
               &times;
             </button>
-            <img
-              src={imageSrc}
-              alt={title}
-              className="w-full h-auto max-h-screen object-contain"
-            />
+            <div className="w-full h-full overflow-hidden rounded-lg">
+              <img
+                src={imageSrc}
+                alt={title}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       )}
