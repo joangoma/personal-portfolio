@@ -16,7 +16,7 @@ export const AboutMeSkillsElement = ({icon, data}: TechincalProps) => {
 
   return (
     <>
-      <div className="w-80 h-80 bg-gray-100 md:mx-4 flex flex-col items-center justify-center space-y-2 border-2 border-gray-300 rounded-xl z-10">
+      <div className="w-80 h-80 bg-gray-100 md:mx-4 mb-4 flex flex-col items-center justify-center space-y-2 border-2 border-gray-300 rounded-xl z-10">
         <i className={`bx ${icon} bx-md bx-tada-hover`}></i>
         <h3 className="mb-2 font-semibold text-gray-900">{title}</h3>
           <button
