@@ -7,29 +7,26 @@ interface PopUpProps {
 
 const PopUp = ({ closePopUp, titleSubPara }: PopUpProps) => {
   return (
-    <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
-        <h2 className="text-2xl font-bold mb-4 text-center">
+    <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 p-4">
+      <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full">
+        <h2 className="text-3xl font-bold mb-6 text-center">
           {titleSubPara.title}
         </h2>
-        <p className="text-gray-700 mb-4 text-center">
+        <p className="text-gray-700 mb-6 text-center text-lg">
           {titleSubPara.subtitle}
         </p>
-
-        <ul className="list-none mb-4 text-gray-700">
-          {titleSubPara.descriptions.map((item) => (
-            <>
-              <li className="flex items-center justify-center mb-2">
-                <i className="bx bx-check-circle mr-2 text-blue-500"></i>
-                <span>{item}</span>
-              </li>
-            </>
+        <ul className="list-none mb-6 text-gray-700 grid grid-cols-1 md:grid-cols-2 gap-4">
+          {titleSubPara.descriptions.map((item, index) => (
+            <li key={index} className="flex items-start">
+              <i className="bx bx-check-circle mr-3 text-blue-500 text-xl mt-1"></i>
+              <span className="text-lg">{item}</span>
+            </li>
           ))}
         </ul>
         <div className="flex justify-center">
           <button
             onClick={closePopUp}
-            className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transition duration-300 ease-in-out"
+            className="px-6 py-3 bg-red-500 text-white text-lg rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transition duration-300 ease-in-out"
           >
             Close
           </button>

@@ -8,7 +8,7 @@ interface ProjectsPageProps {
 const ProjectsPage = ({projects}: ProjectsPageProps) => {
   return (
     <div className="bg-grey-200 bg-gray-200 py-20 p-8 space-y-4" id="projects">
-      <h2 className="text-3xl md:text-4xl lg:text-5xl  text-center mb-12 font-bold tracking-tight text-gray-900">
+      <h2 className="text-3xl md:text-4xl  text-center mb-12 font-bold tracking-tight text-gray-900">
         My Projects
       </h2>
       <div className="max-w-5xl mx-auto space-y-4">

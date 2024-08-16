@@ -23,7 +23,7 @@ export const navBarData: NavBar = {
 // About me data
 export const aboutMeData: TitleSubtitileParagraph = {
   title: "About me",
-  subtitle: "My introduction",
+  subtitle: "Hobbies",
   descriptions: ["Hi, I'm Joan Gomà, a Data Scientist Student in Barcelona. I'm passionate about my work and always try to merge my knowledge in Data Science with my hobbies such as music and sport to approach problems differently.",
     "Hi, I'm Joan Gomà, a Data Scientist Student in Barcelona. I'm passionate about my work and always try to merge my knowledge in Data Science with my hobbies such as music and sport to approach problems differently.",
    ]
@@ -34,21 +34,32 @@ export const aboutMeData: TitleSubtitileParagraph = {
 export const codingPopUp: TitleSubtitileParagraph = {
   title: "Coding skills",
   subtitle: "noseee",
-  descriptions: ["Item 1: Detailed description about item 1.", "Item 2: Detailed description about item 2.", "Item 3: Detailed description about item 3.", "Item 4: Detailed description about item 4."]
+  descriptions: ["Advanced proficiency in C++ and Python programming",
+    "Skilled in implementing machine learning algorithms and techniques",
+    "Proficient in data visualization and creating insightful dashboards",
+    "Basic knowledge of front-end development (HTML, CSS, JavaScript, React)",
+    "Experience with SQL and database management",
+    "Familiarity with R for statistical analysis and computations",
+    "Basic understanding of video game development principles and tools",
+    "Strong foundation in data structures and algorithms"]
 }
 
 // Sport: view more
-export const sportPopUp: TitleSubtitileParagraph = {
-  title: "Sport",
+export const awardsAndAchievements: TitleSubtitileParagraph = {
+  title: "Awards & Achievements",
   subtitle: "noseee",
-  descriptions: ["Item 1: Detailed description about item 1.", "Item 2: Detailed description about item 2.", "Item 3: Detailed description about item 3.", "Item 4: Detailed description about item 4."]
+  descriptions: ["2023 Datathon FME Rookies category winner on the Outfit Generator project.", 
+    "2022 Youth Research Award (Generalitat de Catalunya) for a Research Work in collaboration with Barcelona Supercomputing Center.",
+     "Finalist at OIE (Spanish Olympiad in Informatics) 2022.", "Silver Medal at OIcat (Catalan Olympiad in Informatics) 2022.", 
+     "Grant at Leagues of Code Summer Camp, focussed on competitive programming. July 2022."]
+  
 }
 
 // Coding: view more
 export const workingExperiencePopUp: TitleSubtitileParagraph = {
   title: "Working Experience",
   subtitle: "noseee",
-  descriptions: ["Item 1: Detailed description about item 1.", "Item 2: Detailed description about item 2.", "Item 3: Detailed description about item 3.", "Item 4: Detailed description about item 4."]
+  descriptions: ["2023 Datathon FME Rookies category winner on the Outfit Generator project.", "2022 Youth Research Award (Generalitat de Catalunya) for a Research Work in collaboration with Barcelona Supercomputing Center.", "Finalist at OIE (Spanish Olympiad in Informatics) 2022.", "Silver Medal at OIcat (Catalan Olympiad in Informatics) 2022.", "Grant at Leagues of Code Summer Camp, focussed on competitive programming. July 2022."]
 }
 
 export const projects = [
@@ -74,3 +85,8 @@ export const projects = [
   }
   
 ]
+
+
+
+
+
