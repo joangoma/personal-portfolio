@@ -14,7 +14,7 @@ const Home = ({ title, subtitle, description }: HomeData) => {
             <p className="text-base md:text-lg text-gray-600 max-w-lg mb-6 self-start text-justify">{description}</p>
           </div>
 
-          <div className="w-full  lg:w-1/2 flex justify-center mt-6 md:mt-0">
+          <div className="w-full lg:w-1/2 flex justify-center mt-6 md:mt-0">
             <div className="home_image"></div>
           </div>
         </div>

@@ -33,7 +33,7 @@ export const aboutMeData: TitleSubtitileParagraph = {
 // Coding: view more
 export const codingPopUp: TitleSubtitileParagraph = {
   title: "Coding skills",
-  subtitle: "noseee",
+  subtitle: "",
   descriptions: ["Advanced proficiency in C++ and Python programming",
     "Skilled in implementing machine learning algorithms and techniques",
     "Proficient in data visualization and creating insightful dashboards",
@@ -47,7 +47,7 @@ export const codingPopUp: TitleSubtitileParagraph = {
 // Sport: view more
 export const awardsAndAchievements: TitleSubtitileParagraph = {
   title: "Awards & Achievements",
-  subtitle: "noseee",
+  subtitle: "",
   descriptions: ["2023 Datathon FME Rookies category winner on the Outfit Generator project.", 
     "2022 Youth Research Award (Generalitat de Catalunya) for a Research Work in collaboration with Barcelona Supercomputing Center.",
      "Finalist at OIE (Spanish Olympiad in Informatics) 2022.", "Silver Medal at OIcat (Catalan Olympiad in Informatics) 2022.", 
@@ -58,8 +58,10 @@ export const awardsAndAchievements: TitleSubtitileParagraph = {
 // Coding: view more
 export const workingExperiencePopUp: TitleSubtitileParagraph = {
   title: "Working Experience",
-  subtitle: "noseee",
-  descriptions: ["2023 Datathon FME Rookies category winner on the Outfit Generator project.", "2022 Youth Research Award (Generalitat de Catalunya) for a Research Work in collaboration with Barcelona Supercomputing Center.", "Finalist at OIE (Spanish Olympiad in Informatics) 2022.", "Silver Medal at OIcat (Catalan Olympiad in Informatics) 2022.", "Grant at Leagues of Code Summer Camp, focussed on competitive programming. July 2022."]
+  subtitle: "",
+  descriptions: ["BSC researcher: Focused in Sign Language Translation, large language model applications for dataset classification and text mining.",
+    "Coding Teacher (July 2021 - June 2022): Instructed children aged 7-14 at Codelearn in programming fundamentals and logic development.",
+    "University Academy Teacher: ..."]
 }
 
 export const projects = [
@@ -85,6 +87,8 @@ export const projects = [
   }
   
 ]
+
+
 
 
 
