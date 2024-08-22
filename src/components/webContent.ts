@@ -1,4 +1,4 @@
-import { HomeData, NavBar, TitleSubtitileParagraph, Projects } from "./types";
+import { HomeData, NavBar, TitleSubtitileParagraph } from "./types";
 import imgCastell from '../assets/castell.png'
 import imgPronoms from '../assets/pronominalitza_web.png'
 import hackupc24 from '../assets/hackupc24.png'

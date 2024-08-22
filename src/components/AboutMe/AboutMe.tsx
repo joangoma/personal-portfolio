@@ -1,20 +1,19 @@
-import { TitleSubtitileParagraph } from "../types";
+import { TitleParagraph, TitleSubtitileParagraph } from "../types";
 import { Hobby } from "./Hobby"
 import "boxicons";
 import ImageCarousel from "./ImageCarrousel";
 
 const images = [
-  { src: "/src/assets/hobby_web.jpg", alt: "Description of the image" },
-  { src: "/src/assets/saxo_web.jpg", alt: "Another image description" },
-  { src: "/src/assets/castells1.jpg", alt:"hola"},
+  { src: "./src/assets/hobby_web.jpg", alt: "Description of the image" },
+  { src: "./src/assets/saxo_web.jpg", alt: "Another image description" },
+  { src: "./src/assets/castells1.jpg", alt:"hola"},
   // Add more images as needed
 ];
 
 export const AboutMe = ({
   title,
-  subtitle,
   descriptions,
-}: TitleSubtitileParagraph) => {
+}: TitleParagraph) => {
 
   return (
     <div className="bg-gray-200 justify-center py-16" id="about">

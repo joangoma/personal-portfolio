@@ -19,6 +19,11 @@ export interface TitleSubtitileParagraph {
   descriptions: string[];
 }
 
+export interface TitleParagraph {
+  title: string;
+  descriptions: string[];
+}
+
 export interface SocialLink {
 platform: string;
 url: string;

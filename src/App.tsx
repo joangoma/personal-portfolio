@@ -19,7 +19,6 @@ function App() {
       <Skills></Skills> 
       <AboutMe
         title={aboutMeData.title}
-        subtitle={aboutMeData.subtitle}
         descriptions={aboutMeData.descriptions}
       ></AboutMe>
       <ProjectsPage projects={projects}>

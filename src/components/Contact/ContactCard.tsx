@@ -1,5 +1,4 @@
 // src/components/ContactSection.jsx
-import React from 'react';
 import { FaEnvelope, FaGithub } from 'react-icons/fa';
 
 const ContactSection = () => {
