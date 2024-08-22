@@ -8,7 +8,7 @@ This project is a personal portfolio website developed using React and TypeScrip
 
 ## Live Demo
 
-[View the live portfolio](https://your-portfolio-url.com)
+[View the live portfolio](https://joangoma.github.io/personal-portfolio/)
 
 ## Features
 
