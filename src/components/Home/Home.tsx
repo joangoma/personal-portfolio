@@ -8,13 +8,13 @@ const Home = ({ title, subtitle, description }: HomeData) => {
       <div className="m-8">
 
         <div className="flex flex-col md:felx-row lg:flex-row">
-          <div className="w-full lg:w-1/2 xl:w-2/3 mt-8 flex flex-col ">
-            <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold text-gray-800 mb-4 self-start">{title}</h1>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-600 mb-6 self-start">{subtitle}</h2>
+          <div className="w-full lg:w-1/2 mt-8 flex flex-col ">
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4 self-start">{title}</h1>
+            <h2 className="text-2xl md:text-3xl text-gray-600 mb-6 self-start">{subtitle}</h2>
             <p className="text-base md:text-lg text-gray-600 max-w-lg mb-6 self-start text-justify">{description}</p>
           </div>
 
-          <div className="w-full lg:w-1/2 xl:w-2/3 flex justify-center mt-6 md:mt-0">
+          <div className="w-full lg:w-1/2 flex justify-center mt-6 md:mt-0">
             <div className="home_image"></div>
           </div>
         </div>
