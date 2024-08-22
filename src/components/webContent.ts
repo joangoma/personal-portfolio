@@ -65,7 +65,7 @@ export const workingExperiencePopUp: TitleSubtitileParagraph = {
   subtitle: "",
   descriptions: ["BSC researcher internship (summer 2024) focused on Sign Language Translation, large language models applications for dataset labelling, classification and text mining.",
     "Coding Teacher (July 2021 - June 2022): Instructed children aged 7-14 at Codelearn in programming fundamentals and logic development."]
-}
+} 
 
 export const projects = [
   {
