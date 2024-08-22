@@ -1,4 +1,4 @@
-import { TitleParagraph, TitleSubtitileParagraph } from "../types";
+import { TitleParagraph } from "../types";
 import { Hobby } from "./Hobby"
 import "boxicons";
 import ImageCarousel from "./ImageCarrousel";
