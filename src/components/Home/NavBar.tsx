@@ -5,8 +5,8 @@ const Navbar = ({ items }: NavBar) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-200 py-4 z-50">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="fixed top-0 left-0 w-full bg-gray-200 bg-opacity-90 py-2 z-50">
+      <div className="container mx-auto flex justify-between items-center px-4">
         <a href="#" className="text-gray-800 text-xl font-bold">
           GomaCortes
         </a>
@@ -34,14 +34,14 @@ const Navbar = ({ items }: NavBar) => {
         </div>
         <div
           className={`${
-            isOpen ? "block" : "hidden"
-          } md:flex flex-col md:flex-row md:items-center`}
+            isOpen ? "flex" : "hidden"
+          } flex-col md:flex md:flex-row md:items-center absolute md:static text-right top-12 left-0 w-full md:w-auto bg-gray-200 bg-opacity-95 md:bg-transparent md:space-x-4 rounded-b-lg`}
         >
           {items.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-600 hover:text-gray-800 px-3 py-2 md:px-4 md:py-0"
+              className="text-gray-600 hover:text-gray-800 px-4 py-2 md:px-4 md:py-0"
             >
               {item.name}
             </a>

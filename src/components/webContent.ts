@@ -5,6 +5,7 @@ import hackupc24 from '../assets/hackupc24.png'
 import outfit_generator from '../assets/outfit_generator.png'
 import cinebus from '../assets/cinebus_web.png'
 
+
 export const homeData: HomeData = {
   title: "Joan Gomà Cortés",
   subtitle: "Data Scientist and Engineering Student",
@@ -15,7 +16,7 @@ export const homeData: HomeData = {
 export const navBarData: NavBar = {
   items: [
     { name: "Home", href: "#home" },
-    { name: "Skills", href: "#skills" },  
+    { name: "Skills", href: "#skills" },
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
@@ -43,7 +44,7 @@ export const codingPopUp: TitleSubtitileParagraph = {
     "Experience with SQL and database management.",
     "Knowledge of R for statistical analysis and computations.",
     "Basic understanding of video game development principles and tools.",
-    "Strong foundation in data structures and algorithms.", 
+    "Strong foundation in data structures and algorithms.",
     "Experience in big data preprocessing for a language translation model."]
 }
 

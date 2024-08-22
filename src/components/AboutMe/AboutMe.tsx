@@ -3,10 +3,14 @@ import { Hobby } from "./Hobby"
 import "boxicons";
 import ImageCarousel from "./ImageCarrousel";
 
+import carrousel1 from '../../assets/carr1.jpg'
+import carrousel2 from '../../assets/carr2.jpg'
+import carrousel3 from '../../assets/carr3.jpg'
+
 const images = [
-  { src: "./src/assets/hobby_web.jpg", alt: "Description of the image" },
-  { src: "./src/assets/saxo_web.jpg", alt: "Another image description" },
-  { src: "./src/assets/castells1.jpg", alt:"hola"},
+  { src: carrousel1, alt: "A boy in the mountains" },
+  { src: carrousel2, alt: "A boy playing the saxophone" },
+  { src: carrousel3, alt: "A boy in a Human towers exhibition " },
   // Add more images as needed
 ];
 
