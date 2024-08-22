@@ -34,6 +34,6 @@ const PopUp = ({ closePopUp, titleSubPara }: PopUpProps) => {
       </div>
     </div>
   );
-};
+};  
 
 export default PopUp;

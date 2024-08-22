@@ -1,3 +1,0 @@
-start project: npm run dev
-
-shortcut per incialitzar component: rafce

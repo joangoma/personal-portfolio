@@ -4,6 +4,7 @@ import { AboutMe } from "./components/AboutMe/AboutMe";
 import { navBarData, homeData, aboutMeData, projects } from "./components/webContent";
 import ProjectsPage from "./components/Projects/ProjectsPage";
 import ContactCard from "./components/Contact/ContactCard";
+import { Skills } from "./components/Skills/Skills";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         subtitle={homeData.subtitle}
         description={homeData.description}
       />
+      <Skills></Skills> 
       <AboutMe
         title={aboutMeData.title}
         subtitle={aboutMeData.subtitle}

@@ -33,7 +33,7 @@ const DescriptionComponent: React.FC<DescriptionProps> = ({ title, description }
     <div className="ml-4">
       <h3 className="text-center md:text-left lg:text-left text-lg font-semibold text-gray-800">{title}</h3>
       {description.split('\n').map((paragraph, index) => (
-        <p key={index} className="text-gray-600 mt-2">
+        <p key={index} className="text-gray-600 mt-2 text-justify">
           <ParsedParagraph text={paragraph} />
         </p>
       ))}
