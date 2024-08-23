@@ -22,12 +22,12 @@ export const AboutMe = ({
   return (
     <div className="bg-gray-200 justify-center py-16" id="about">
       <div className="mx-8">  
-        <h2 className="text-3xl md:text-4xl  text-center mb-12 font-bold tracking-tight text-gray-900">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl  text-center mb-12 font-bold tracking-tight text-gray-900">
           {title}
         </h2>
 
         <div className="flex flex-col items-center justify-center lg:flex-row mb-8">
-          <div className="sm:w-72 md:w-80 lg:w-96 flex justify-center mb-8 md:mr-8">
+          <div className="w-72 md:w-96 lg:w-[450px] flex justify-center mb-8 md:mr-8">
             <ImageCarousel images={images} />
           </div>
           <div className="flex flex-col items-start self-center w-full lg:w-1/3">
@@ -36,7 +36,7 @@ export const AboutMe = ({
               <Hobby title="Saxophone player since 2009" icon="bxs-music" text="" />
               <Hobby title="Human towers team member" icon="bxs-castle" text="" />
             </div>
-            <div className="mt-6 w-full">
+            <div className="mt-6 w-full text-lg xl:text-xl">
               {descriptions.map((item, index) => (
                 <p key={index} className="text-gray-600 mb-4 text-justify">{item}</p>
               ))}
