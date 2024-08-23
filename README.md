@@ -17,7 +17,7 @@ This project is a personal portfolio website developed using React and TypeScrip
 - Project showcase with detailed descriptions
 - Skills and technologies section
 - About me page
-- Contact form
+- Contact section
 
 ## Technologies Used
 
@@ -25,7 +25,6 @@ This project is a personal portfolio website developed using React and TypeScrip
 - TypeScript
 - HTML5
 - CSS3 (with Tailwind CSS)
-- [Any other major libraries or frameworks used]
 
 ## Project Goals
 
@@ -46,25 +45,13 @@ Throughout this project, I encountered and overcame several challenges:
 
 These challenges provided valuable learning opportunities and significantly improved my understanding of front-end development.
 
-## Future Improvements
-
-While the current version of the portfolio meets its initial goals, there are several areas I plan to improve in the future:
-
-- [ ] Add more interactive elements
-- [ ] Implement a blog section
-- [ ] Enhance accessibility features
-- [ ] Optimize performance further
 
 ## Contribution
 
 As this is a personal project, I'm not actively seeking contributions. However, if you have suggestions or feedback, feel free to open an issue in the repository.
 
-## Acknowledgements
-
-I'd like to thank [mention any tutorials, courses, or individuals that significantly helped you] for their invaluable resources and guidance during this learning journey.
-
 ## Contact
 
-[Your Name] - [your.email@example.com]
+Joan Gomà Cortés - joangoma24@gmail.com
 
-Project Link: [https://github.com/your-username/portfolio-project](https://github.com/your-username/portfolio-project)
+Project Link: [https://joangoma.github.io/personal-portfolio/](https://joangoma.github.io/personal-portfolio/)
