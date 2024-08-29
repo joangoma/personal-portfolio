@@ -8,7 +8,7 @@ interface PopUpProps {
 const PopUp = ({ closePopUp, titleSubPara }: PopUpProps) => {
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full">
+      <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full max-h-[80vh] overflow-y-auto">
         <h2 className="text-3xl font-bold mb-6 text-center">
           {titleSubPara.title}
         </h2>
@@ -33,7 +33,9 @@ const PopUp = ({ closePopUp, titleSubPara }: PopUpProps) => {
         </div>
       </div>
     </div>
+
+
   );
-};  
+};
 
 export default PopUp;
